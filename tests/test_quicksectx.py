@@ -2,7 +2,9 @@ import pyximport
 
 pyximport.install()
 
-import sys, os
+import os, sys
+
+sys.path.append("../src")
 import unittest
 
 try:
@@ -287,7 +289,7 @@ class SpecialTestCase(unittest.TestCase):
         tree.add(3, 5, 2.0)
         tree.add(5, 7, 3.0)
         self.assertEqual(str(tree.search(3, 4)), '[Inv(3, 5, d=2.0)]')
-        print(tree.search(2,4))
+        print(tree.search(2, 4))
         self.assertTrue('Inv(1, 3, d=1.0)' in str(tree.search(2, 4)))
         self.assertTrue('Inv(3, 5, d=2.0)' in str(tree.search(2, 4)))
         self.assertEqual(len(tree.search(2, 4)), 2)
@@ -362,7 +364,7 @@ class RemovalTestCases(unittest.TestCase):
         iv.add(15, 22)
         iv.add(20, 27)
         print(iv.pretty_print())
-        print(iv.search(0,220))
+        print(iv.search(0, 220))
 
 
 def main():

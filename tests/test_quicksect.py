@@ -2,7 +2,9 @@ import pyximport
 
 pyximport.install()
 
-import sys, os
+import os, sys
+
+sys.path.append("../src")
 import unittest
 try:
     sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
