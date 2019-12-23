@@ -2,3 +2,5 @@
 src/*.c
 *.pyc
 build
+.idea
+*.pkl
