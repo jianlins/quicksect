@@ -4,6 +4,7 @@ pyximport.install()
 import os, sys
 
 sys.path.append("../src")
+sys.path.append("src")
 import unittest
 # from quicksectx import IntervalNode as IntervalNodeX, Interval as IntervalX, IntervalTree as IntervalTreeX
 from quicksectx import IntervalNode, Interval, IntervalTree

@@ -5,6 +5,7 @@ pyximport.install()
 import os, sys
 
 sys.path.append("../src")
+sys.path.append("src")
 import unittest
 
 try:
